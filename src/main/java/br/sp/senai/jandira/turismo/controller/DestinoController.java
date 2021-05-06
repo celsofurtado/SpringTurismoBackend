@@ -23,9 +23,6 @@ public class DestinoController  {
 	@Autowired
 	private DestinoRepository destinoRepository;
 	
-	@Autowired
-	private FotoRepository fotoRepository;
-	
 	@GetMapping
 	private List<DestinoDto> getAll() {
 		List<Destino> destinos = destinoRepository.findAll();
